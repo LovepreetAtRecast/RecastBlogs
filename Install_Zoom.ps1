@@ -7,7 +7,7 @@
     
 .NOTES
     Author: Lovepreet Singh
-    Date: September 13, 2023
+    Date: March 13, 2024
     Version: 1.0
     
     This script is provided as-is and without warranty. Use it at your own risk.
@@ -17,8 +17,6 @@
 
     For Install:> Powershell.exe -NoProfile -ExecutionPolicy ByPass -File .\Install_Zoom.ps1 --install
     For Uninstall:> Powershell.exe -NoProfile -ExecutionPolicy ByPass -File .\Install_Zoom.ps1 --uninstall
-
-
     
 #>
 
@@ -27,10 +25,11 @@ param (
     [switch]$Uninstall
 )
 
+#Give a app name and specify the permalink
 $AppName = "Zoom"
 $DownloadURL = "https://zoom.us/client/latest/ZoomInstallerFull.msi?archType=x64"
 
-# Specify the full path to the MSI file
+# Specify the full path to the MSI file. In my case i am storing this in the Temp folder.
 $MSIFilePath = "$env:TEMP\$AppName.msi"
 
 if ($Install) {
