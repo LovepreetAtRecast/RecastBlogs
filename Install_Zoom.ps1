@@ -6,14 +6,14 @@
     This script allows you to install or uninstall Zoom on a Windows system.
     
 .NOTES
-    Author: Lovepreet Singh
+    Author: Lovepreet Singh (Recast Software)
     Date: March 13, 2024
-    Version: 1.0
+    Version: 3.0
     
     This script is provided as-is and without warranty. Use it at your own risk.
 
 .Usage
-    Copy and paste the below commands in Command prompt (run as admin), Or in Intune
+    Copy and paste the below commands in Command prompt (run as admin), Or in Intune install/unisntall command section.
 
     For Install:> Powershell.exe -NoProfile -ExecutionPolicy ByPass -File .\Install_Zoom.ps1 --install
     For Uninstall:> Powershell.exe -NoProfile -ExecutionPolicy ByPass -File .\Install_Zoom.ps1 --uninstall
